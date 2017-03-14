@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>DHC首页</title>
+	<!-- <link rel="stylesheet" type="text/css" href="css/style-goods1.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style-index.css">
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/floornav.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var isMoveing = false;
+			if (!isMoveing) {
+				$("li",".index-sub-nav").click(function(){
+					isMoveing = true;
+					var bindex = $(this).index(),
+						bHeight = $(".index-right2").height();
+					$(".box3").animate({"top":-bindex*bHeight+"px"},300, function(){
+						isMoveing = false;
+					});
+
+					$(this).parent().children().removeClass("currs");
+					$(this).addClass("currs");
+				});
+			}
+		});
+	</script>
+
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="top">
+	<div class="top-con">
+		<div class="top-left">
+			<a href="#"><img class="topslogo" src="imgs/topslogo.png"></a>
+			<a href="#"><img src="imgs/tops02.png"></a>
+			<ul>
+				<li class="top-li"><a href="#"><img src="imgs/tops03.png"></a></li><br>
+				<li class="top-li"><a href="#"><img src="imgs/tops06.png"></a></li>
+				<li class="top-li"><a href="#"><img src="imgs/tops07.png"></a></li>
+			</ul>
+			<ul>
+				<li class="top-li"><a href="#"><img src="imgs/tops00.jpg"></a></li>
+				<li class="top-li"><a href="#"><img src="imgs/tops98.png"></a></li>
+				<li class="top-li"><a href="#"><img src="imgs/tops99.png"></a></li>
+			</ul>
+			
+			<a href="#"><img src="imgs/tops08.png" style="margin-right:15px;"></a>
+			<a href="#"><img src="imgs/tops09.png" style="margin-right:15px;"></a>
+			<a href="#"><img src="imgs/tops10.png" style="margin-right:15px;"></a>
+		</div>
+
+		<div class="top-right">
+			<div class="box1">
+				<div class="shops">
+				<p class="p1">商品合计：<span class="amounts">0</span>件</p>
+				<p class="p2">合计：<span class="total">0</span><strong style="color:red">元</strong></p>
+				</div>
+				<div id="btn11" style="background:blue;"><a href="shopcar.html"><img src="imgs/tops01_03.jpg" class="image1" ></a></div>
+				<div id="btn12" style="background:red;">
+				<a href="DHC login 注册.html"><img src="imgs/tops01_05.jpg" class="image2"></a></div>
+
+			<p class="login">欢迎来到DHC[<a href="DHC login 注册.html">点击登录</a>>]</p>
+			</div>
+		</div>
+	
+	</div>
+
+
+	<!-- 一级导航 -->
+	<div id="nav">
+
+		<ul>
+			<li><a href="#"><img src="imgs/top_2_1down.jpg" class="ups"><img src="imgs/top_2_1up.jpg" class="downs"></a></li>
+			<li><a href="DHC弹力蛋白.html"><img src="imgs/top_2_2up.jpg" class="ups"><img src="imgs/top_2_2down.jpg" class="downs"></a></li>
+			<li><a href="#"><img src="imgs/top_2_3up.jpg" class="ups"><img src="imgs/top_2_3down.jpg" class="downs"></a></li>
+			<li><a href="month-off.html"><img src="imgs/top_2_4up.jpg" class="ups"><img src="imgs/top_2_4down.jpg" class="downs"></a></li>
+			<li><a href="#"><img src="imgs/top_2_5up.jpg" class="ups"><img src="imgs/top_2_5down.jpg" class="downs"></a></li>
+			<li><a href="#"><img src="imgs/top_2_6up.jpg" class="ups"><img src="imgs/top_2_6down.jpg" class="downs"></a></li>
+
+		</ul>
+
+	</div>
+
+	</div>
+
+
+	<!-- search -->
+	
+		<div class="search">
+			<div class="search-con">
+			<div class="box2">
+				<input class="search-inp" type="text" class="top-search" placeholder="请输入商品名称、商品编号或关键字" />
+				<button class="search-btn"><span><img src="imgs/top_search.jpg"></span><strong>搜索</strong></button>
+			</div>	
+			</div>
+		</div>
+	
+	<!-- banner  -->
+	<div id="banner">
+		<div class="container">
+			<ul class="banner-box">
+				<li class="topic"><a href="#"><img src="imgs/b801.jpg" alt="" /></a></li>
+				<li class="topic"><a href="#"><img src="imgs/b802.jpg" alt="" /></a></li>
+				<li class="topic"><a href="#"><img src="imgs/b803.jpg" alt="" /></a></li>
+				<li class="topic"><a href="month-off.html"><img src="imgs/b804.jpg" alt="" /></a></li>
+				<li class="topic"><a href="#"><img src="imgs/b805.jpg" alt="" /></a></li>
+			</ul>
+			<div class="pages_background"></div>
+			<div class="pages"></div>
+			<div class="prev"><</div>
+			<div class="next">></div>
+		</div>
+		
+	</div>
+
+	<!-- main -->
+	<div id="main">
+	<ul id="floor-nav">
+		<li class="curr">1F<span style="display:inline-block;">人气热卖</span></li>
+		<li>2F<span>护肤</span></li>
+		<li>3F<span>彩妆</span></li>
+		<li>4F<span>健康食品</span></li>
+		<li>5F<span>专享礼物</span></li>
+		<li>6F<span>贴心服务</span></li>
+	
+	</ul>
+		<div class="main-con">
+			<div class="main-left" style="width:200px; margin-right:30px;">
+				<div class="main-left-1" style="margin-bottom:14px;">
+					<a href="#" class="moreNewshops"><img src="goods1-imgs/open2.jpg"></a>
+				</div>
+				<div class="main-left-2" style="margin-bottom:14px;">
+					<a href="#" class="moreNewshops"><img src="goods1-imgs/open1.jpg"></a>
+
+				</div>
+				<div class="main-left-3">
+					<a href="#" class="moreNewshops"><img style="display:block;" src="goods1-imgs/xx1.jpg"></a>
+
+					<ul class="main-left-news" style="padding:2px 15px; width:160px; height:135px;">
+						<li><span>></span> <a href="#">新的季节，新的价格。DHC降价通知</a></li>
+						<li><span>></span> <a href="#">秋の2重礼，点击领取→</a></li>
+						<li><span>></span> <a href="#">屡获日本各类时尚杂志奖</a></li>
+						<li><span>></span> <a href="#">DHC荣获日本超级品牌</a></li>
+						<li><span>></span> </li>
+					</ul>
+						<div class="pagechange" style="height:23px; width:200px;">
+						<a  class="pageup" href="#"><img src="goods1-imgs/left_2_3.gif"></a>
+						<a  class="pagedown" href="#"><img src="goods1-imgs/left_2_4.gif"></a>
+					</div>
+				</div>
+				<div class="main-left-4">
+					<a href="#" class="hzclass"><img style="display:block; float:left;" src="goods1-imgs/hz01.jpg"></a>
+
+					<ul class="hufu" >
+						<li><span>></span> <a href="#">卸妆</a></li>
+						<li><span>></span> <a href="#">洁面</a></li>
+						<li><span>></span> <a href="#">化妆水</a></li>
+						<li><span>></span> <a href="#">美容霜.美容油</a></li>
+						<li><span>></span> <a href="#">精华液.美容液</a></li>
+						<li><span>></span> <a href="#">乳液.凝露</a></li>
+						<li><span>></span> <a href="#">面膜.眼膜</a></li>
+						<li><span>></span> <a href="#">护唇膏</a></li>
+						<li><span>></span> <a href="#">美睫护理</a></li>
+						<li><span>></span> <a href="#">眼霜.颈霜</a></li>
+						<li><span>></span> <a href="#">去角质磨砂膏</a></li>
+						<li><span>></span> <a href="#">防晒</a></li>
+						<li><span>></span> <a href="#">护肤道具</a></li>
+
+					</ul>
+
+				</div>
+				<div class="main-left-5">
+
+					<a href="#" class="hzclass2"><img style="display:block; float:left;" src="goods1-imgs/hz02.jpg"></a>
+
+					<ul class="caizhuang" >
+						<li><span>></span> <a href="#">粉底液.霜</a></li>
+						<li><span>></span> <a href="#">妆前乳.霜</a></li>
+						<li><span>></span> <a href="#">定妆蜜粉.粉饼</a></li>
+						<li><span>></span> <a href="#">两用粉底</a></li>
+						<li><span>></span> <a href="#">唇膏.唇蜜</a></li>
+						<li><span>></span> <a href="#">眉笔粉</a></li>
+						<li><span>></span> <a href="#">眼线液.笔.粉</a></li>
+						<li><span>></span> <a href="#">遮瑕</a></li>
+						<li><span>></span> <a href="#">腮红.修容粉</a></li>
+						<li><span>></span> <a href="#">睫毛膏</a></li>
+						<li><span>></span> <a href="#">眼影</a></li>
+						<li><span>></span> <a href="#">彩妆道具</a></li>
+
+					</ul>
+
+				</div>
+				
+				<div class="main-left-13">
+						<a href="#" class="hzclass10"><img style="display:block; float:left;" src="goods1-imgs/hz10.jpg"></a>
+
+					<ul class="aims" >
+						<li><span>></span> <a href="#">植物.保湿</a></li>
+						<li><span>></span> <a href="#">淡斑.美白</a></li>
+						<li><span>></span> <a href="#">抗老.紧致</a></li>
+						<li><span>></span> <a href="#">黑头毛孔</a></li>
+						<li><span>></span> <a href="#">眼周问题</a></li>
+						<li><span>></span> <a href="#">控油.抗痘</a></li>
+					
+					</ul>
+				</div>
+				
+				<div class="main-left-15">
+
+					<a href="#" class="hzclass12"><img style="display:block; float:left;" src="goods1-imgs/gwzn.jpg"></a>
+
+					<ul class="shopnav" >
+						<li><span>></span> <a href="#">购物流程</a></li>
+						<li><span>></span> <a href="#">退货换货</a></li>
+						<li><span>></span> <a href="#">常见问题</a></li>
+							
+					</ul>
+					<ul class="shopnav-img">
+						<li><a href="#"><img  src="goods1-imgs/border_red1.jpg"></a></li>
+						<li><a href="#"><img  src="goods1-imgs/border_red2.jpg"></a></li>
+						<li><a href="#"><img  src="goods1-imgs/border_red3.jpg"></a></li>
+						<li class="listlast"><a href="#"><img  src="goods1-imgs/border_red4.jpg"></a></li>
+					</ul>
+				</div>
+				<div class="main-left-16">
+					<a class="toubu" href="#" class="hzclass13"><img style="display:block; float:left;" src="goods1-imgs/glclub.jpg"></a>
+
+					<div class="glclub" >
+						<p class="online1" href="#"><span>></span> <a href="#">线上浏览</a></p>
+					
+					</div>
+
+
+				</div>
+				<div class="main-left-17">
+					<a href="#" class="hzclass14"><img style="display:block; float:left;" src="goods1-imgs/dpdl.jpg"></a>
+
+					<ul class="dianpu" >
+						<li><span>></span> <a href="#">上海</a></li>
+						<li><span>></span> <a href="#">北京</a></li>
+						<li><span>></span> <a href="#">广东</a></li>
+						<li><span>></span> <a href="#">更多地区</a></li>
+					
+					</ul>
+
+		
+				</div>
+				<div class="main-left-18">
+					<div style="width:200px; height:25px;"><a href="#" class="hzclass15"><img style="display:block; float:left;" src="goods1-imgs/dh1.jpg"></a></div>
+
+					<div class="sjdg" >
+						<img class="erweima" src="goods1-imgs/app1.jpg">
+						<div class="xuxian1"></div>
+						<a href="#"><img class="erweima" src="goods1-imgs/wx1.jpg"></a>
+						<div class="xuxian2"></div>
+						<a href="#"><img class="erweima" src="goods1-imgs/wb1.jpg"></a>
+					</div>
+				
+				</div>
+				<div class="main-left-19">
+					<div class="telshop"><img style="display:block; float:left;" src="goods1-imgs/tel2.jpg"></div>
+				</div>
+				<div class="main-left-20">
+					<div class="Tvad"><img style="display:block; float:left;" src="goods1-imgs/TVnews.jpg">
+						<ul class="daiyan">
+							<li><a href="#">韩国女团oh My Girl 代言DHC</a></li>
+							<li><a href="#">橄榄滋养系列</a></li>
+							<li class="listlast2"><a href="#">点击观看</a>   <a href=""><span>></span></a></li>
+
+						</ul>
+					</div>
+					
+				</div>
+			<!-- 	<div class="main-left-21">
+						<a style="display:block; float:left;" href="#" class="txfw"><img src="goods1-imgs/tx1.jpg"></a>
+
+						<ul class="service1">
+							<li style="background:url(goods1-imgs/newss1.jpg) no-repeat 0px 10px;"><a href=""><p>优惠信息抢先知</p>
+							<p>订阅Olive电邮</p></a></li>
+							<li style="background:url(goods1-imgs/newss2.jpg) no-repeat 0px 10px;"><a href=""><p>畅所欲言</p>
+							<p>真情留言板</p></a></li>
+							<li style="background:url(goods1-imgs/newss3.jpg) no-repeat 0px 10px;"><a href=""><p>美丽壁纸</p>
+							<p>每月更新</p></a></li>
+							<li class="listlast3" style="background:url(goods1-imgs/newss4.jpg) no-repeat 0px 10px;"><a href=""><p>好友推荐计划</p>
+							<p>进行中!</a><span>NEW</span></p></li>
+						</ul>
+					
+				</div> -->
+				<div class="main-left-22" style="border-bottom:1px solid #ccc;margin-bottom:14px;">
+					<a style="display:block; float:left;" href="#" class="tghz"><img src="goods1-imgs/tg1.jpg"></a>
+					
+					<ul class="tuiguang">
+							<li style="background:url(goods1-imgs/newss5.jpg) no-repeat 0px 15px;"><a href=""><p>加盟DHC网站推广</p>
+							<p>最高汇报率8.5%</p></a></li>
+							<li class="listlast4" style="background:url(goods1-imgs/newss6.jpg) no-repeat 0px 10px;"><a href=""><p>DHC校园代理</p></a></li>			
+						</ul>
+				</div>
+				<div class="main-left-23" >
+						<img class="left-pic-last1" src="goods1-imgs/open3.jpg">
+				</div>
+				<div class="main-left-24">
+						<img class="left-pic-last2" src="goods1-imgs/open4.jpg">
+				</div>
+
+			</div>
+	
+			<div class="index-main-right" >
+
+				<div class="right-top">
+					<img src="imgs/so02.jpg" style="margin-right:17px;">
+					<img src="imgs/so03.jpg">
+
+				</div>
+
+				<h3 class="index-right1 floor"><span></span>人气排行.热卖商品</h3>
+				<ul class="index-sub-nav">
+					<li class="currs">护肤</li>
+					<li>彩妆</li>
+					<li>套装组合</li>
+					<li>健康食品</li>
+					<li>美体美发</li>
+					<li>人气推荐</li>
+
+				</ul>
+
+				<div class="index-right2">
+					<div class="box3">
+					<div class="xxk" style="display:block;">
+					<ul>
+						<li><img src="imgs/300_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/300_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/300_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/300_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/300_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+
+					</ul>
+					</div>
+					<div class="xxk">
+					<ul>
+						<li><img src="imgs/732_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/732_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/732_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/732_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/732_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+
+					</ul>
+					</div>
+					<div class="xxk">
+					<ul>
+						<li><img src="imgs/970_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/970_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/970_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/970_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/970_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+
+					</ul>
+					</div>
+					<div class="xxk"> 
+					<ul>
+						<li><img src="imgs/2169_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/2169_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/2169_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/2169_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/2169_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+
+					</ul>
+					</div>
+					<div class="xxk">
+					<ul>
+						<li><img src="imgs/2230_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/2230_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/2230_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/2230_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/2230_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+
+					</ul>
+					</div>
+					<div class="xxk">
+					<ul>
+						<li><img src="imgs/22227_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/22227_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/22227_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/22227_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+						<li><img src="imgs/22227_R.jpg"><a href="#">DHC橄榄卸妆油(L)</a></li>
+
+					</ul>
+					</div>
+					</div>
+					<button>查看TOP 10 排行榜</button>
+
+				</div>
+
+				<h3 class="index-right3 floor"><span></span><strong>护肤</strong> SkinCare</h3>
+
+				<div class="index-right4">
+					<div class="right4-l">
+						<a href="#"><img src="imgs/ds01.jpg"></a>
+						<br>
+						<a href="#">1瓶胜5瓶
+						<br />5效合一“黄金霜”M号重磅上市！</a>
+						<a href="#"><img src="imgs/ds03.jpg" style="margin-top:13px;"></a>
+						<br>
+						<a href="#">1瓶胜5瓶
+						<br />5效合一“黄金霜”M号重磅上市！</a>
+						<div class="hufu-off">
+							<a href="#"><img src="imgs/xiaods01.jpg"></a>
+							<a href="#"><strong>【2支组显示10%off】</strong><br/>淡化细纹.紧致松弛.不长脂肪<br>粒，焕活紧致年轻双眸</a>
+						</div>
+						<div class="hufu-off">
+							<a href="#"><img src="imgs/xiaods01.jpg"></a>
+							<a href="#"><strong>【2支组显示10%off】</strong><br/>淡化细纹.紧致松弛.不长脂肪<br>粒，焕活紧致年轻双眸</a>
+						</div>
+						<ul>
+							<li><a href="#"> 限时优惠：最大50%OFF</a></li>
+							<li><a href="#"> 限时优惠：最大50%OFF</a></li>
+							<li><a href="#"> 限时优惠：最大50%OFF</a></li>
+						</ul>
+
+					</div>
+					<div class="right4-c">
+						<a href="#"><img src="imgs/ds02.jpg"></a>
+						<br>
+						<a href="#">1瓶胜5瓶
+						<br />5效合一“黄金霜”M号重磅上市！</a>
+						<a href="#"><img src="imgs/ds04.jpg" style="margin-top:13px;"></a>
+						<br>
+						<a href="#">1瓶胜5瓶
+						<br />5效合一“黄金霜”M号重磅上市！</a>
+						<div class="hufu-off">
+							<a href="#"><img src="imgs/xiaods01.jpg"></a>
+							<a href="#"><strong>【2支组显示10%off】</strong><br/>淡化细纹.紧致松弛.不长脂肪<br>粒，焕活紧致年轻双眸</a>
+						</div>
+						<div class="hufu-off">
+							<a href="#"><img src="imgs/xiaods01.jpg"></a>
+							<a href="#"><strong>【2支组显示10%off】</strong><br/>淡化细纹.紧致松弛.不长脂肪<br>粒，焕活紧致年轻双眸</a>
+						</div>
+						<ul>
+							<li><a href="#"> 限时优惠：最大50%OFF</a></li>
+							<li><a href="#"> 限时优惠：最大50%OFF</a></li>
+							<li><a href="#"> 限时优惠：最大50%OFF</a></li>
+						</ul>
+
+					</div>
+					<div class="right4-r">
+						<img src="imgs/ims1.jpg">
+						<a href="#"></a>
+					</div>
+				</div>
+
+				<h3 class="index-right5 floor"><span></span><strong>彩妆</strong> MakeUp</h3>
+				<div class="index-right6">
+					<div class="right6-l">
+						<a href="#"><img src="imgs/Ds05.jpg"></a>
+						<br>
+						<a href="#">1瓶胜5瓶
+						<br />5效合一“黄金霜”M号重磅上市！</a>
+						<div class="caizhuang-off">
+							<a href="#"><img src="imgs/Xx05.jpg"></a>
+							<a href="#"><strong>【2支组显示10%off】</strong><br/>淡化细纹.紧致松弛.不长脂肪<br>粒，焕活紧致年轻双眸</a>
+						</div>
+						<ul>
+							<li><a href="#"> 限时优惠：最大50%OFF</a></li>
+						</ul>
+
+					</div>
+					<div class="right6-c">
+						<a href="#"><img src="imgs/Ds06.jpg"></a>
+						<br>
+						<a href="#">1瓶胜5瓶
+						<br />5效合一“黄金霜”M号重磅上市！</a>
+						<div class="caizhuang-off">
+							<a href="#"><img src="imgs/Xx06.jpg"></a>
+							<a href="#"><strong>【2支组显示10%off】</strong><br/>淡化细纹.紧致松弛.不长脂肪<br>粒，焕活紧致年轻双眸</a>
+						</div>
+						
+						<ul>
+							<li><a href="#"> 限时优惠：最大50%OFF</a></li>
+						</ul>
+
+					</div>
+					<div class="right6-r">
+						<img src="imgs/ims2.jpg">
+						<a href="#"></a>
+					</div>
+				</div>
+
+				<h3 class="index-right7 floor"><span></span><strong>健康食品</strong> Health</h3>
+				<div class="index-right8">
+					<div class="right8-l">
+						<a href="#"><img src="imgs/Ds07.jpg"></a>
+						<br>
+						<a href="#">1瓶胜5瓶
+						<br />5效合一“黄金霜”M号重磅上市！</a>
+						<div class="food-off">
+							<a href="#"><img src="imgs/Xx07.jpg"></a>
+							<a href="#"><strong>【2支组显示10%off】</strong><br/>淡化细纹.紧致松弛.不长脂肪<br>粒，焕活紧致年轻双眸</a>
+						</div>
+
+					</div>
+					<div class="right8-c">
+						<a href="#"><img src="imgs/Ds08.jpg"></a>
+						<br>
+						<a href="#">1瓶胜5瓶
+						<br />5效合一“黄金霜”M号重磅上市！</a>
+						<div class="food-off">
+							<a href="#"><img src="imgs/Xx08.jpg"></a>
+							<a href="#"><strong>【2支组显示10%off】</strong><br/>淡化细纹.紧致松弛.不长脂肪<br>粒，焕活紧致年轻双眸</a>
+						</div>
+						
+					</div>
+					<div class="right8-r">
+						<img src="imgs/ims3.jpg">
+						<a href="#"></a>
+					</div>
+				</div>
+
+				<h3 class="index-right9 floor"><span></span><strong>专享礼物</strong> Gifts</h3>
+				<div class="index-right10">
+					<ul>
+						<li><a href="#"><img src="imgs/row01.jpg"></a><a href="#"><img src="imgs/col01.jpg"></a></li>
+						<li><a href="#"><img src="imgs/row02.jpg"></a><a href="#"><img src="imgs/col02.jpg"></a></li>
+						<li><a href="#"><img src="imgs/row03.jpg"></a><a href="#"><img src="imgs/col03.jpg"></a></li>
+						<li class="last-list4"><a href="#"><img src="imgs/row04.jpg"></a><a href="#"><img src="imgs/col04.jpg"></a></li>
+					</ul>
+				</div>
+
+				<h3 class="index-right11 floor"><span></span><strong>贴心服务</strong> Service</h3>
+				<div class="index-right12">
+					<div class="services">
+						<a href="#"><img src="imgs/index_20.jpg" alt="*" /></a>
+						<a href="#"><img src="imgs/index_22.jpg" alt="*" /></a>
+						<a href="#"><img src="imgs/index_21.jpg" alt="*" style="float:right; margin-top:-1px;" /></a>
+					</div>
+					<img src="imgs/look-ss.jpg">
+				</div>
+
+
+			</div>
+		</div>
+	
+	</div>
+
+	<!-- links -->
+	<div id="links">
+		<div class="links-con">
+			<div class="links1">
+				<h4>官网订购</h4>
+				<ul>
+					<li><a href="#">www.dhc.net.cn</a></li>
+					<li><a href="">订购、支付、配送</a></li>
+					<li><a href="">售后服务</a></li>
+					<li><a href="">常见问题</a></li>
+					<li><a href="">免费试用</a></li>
+				</ul>
+			</div>
+			<div class="links2">
+				<h4>店铺订购</h4>
+				<ul>
+					<li>400-820-8820(手机用户免长途费)</li>
+					<li>800-820-8820(固话)</li>
+					<li>021-3318-9888(未开通800地区)</li>
+					<li>周一~周五  9:00~21:00</li>
+					<li>周六、周日 9:00~18:00(节假日除外)</li>
+				</ul>
+			</div>
+
+			<div class="links3">
+				<h4>手机订购</h4>
+				<ul>
+					<li class="app-links"><img src="imgs/app-links.jpg"></li>
+					<li class="weixin-links"><img src="imgs/weixin-links.jpg"></li>
+
+				</ul>
+			</div>
+
+
+			<div class="links4">
+				<h4>店铺导航</h4>
+				<ul>
+					<li><a href="">上海</a></li>
+					<li><a href="">北京</a></li>
+					<li><a href="">广州</a></li>
+					<li><a href="">江苏</a></li>
+					<li><a href="">浙江</a></li>
+					<li><a href="">更多地区</a></li>
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+
+	<!-- map -->
+	<div id="map">
+		<div class="map-con">
+			<ul>
+				<li><a href="#">关于DHC</a></li>
+				<li><a href="#">购物指南</a></li>
+				<li><a href="#">会员优惠</a></li>
+				<li><a href="#">广告合作</a></li>
+				<li><a href="#">招聘信息</a></li>
+				<li><a href="#">校园代理</a></li>
+				<li><a href="#">网站地图</a></li>
+
+			</ul>
+
+		</div>
+	</div>
+
+	<!-- totop -->
+	<a href="#" class="toTop">
+	<img src="imgs/toTop.png" style="position:fixed; right:10px; bottom:20px;"/>
+	</a>
+
+	<!-- foot -->
+	<div id="foot">
+		<div class="foot-con" >
+			<a class="footlogo" href="DHC CHINAindex.html"><img src="imgs/logoFoot.jpg"></a>
+
+			<div class="foottext" >
+				<p><strong>上海蝶翠诗商业有限公司</strong> 版权所有 &copy; 2003-2012</p>
+				<p>上海邮政信箱 126-019 (浦东局) 邮编：200126</p>
+				<p>DHC 日本通信销售化妆品品牌NO.1</p>
+				<p>(品牌排名根据日本流通产业新闻 2016年1月)</p>
+		
+			</div>
+
+			<div class="foottext2">
+				<p>企业营业执照</p>
+				<p>沪ICP 备05035135</p>
+			</div>
+
+			<a class="footpic1" href="#"><img src="imgs/ICBC.gif"></a>
+
+			<a class="footpic2" href="#"><img src="imgs/web110.gif"></a>
+
+			<a class="footpic3" href="#"><img src="imgs/zxw.gif"></a>
+
+			<a class="footpic4" href="#"><img src="imgs/wangjing.jpg"></a>
+ 
+		</div>
+	</div>
+
+</body>
+</html>
