@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>login(zhuce)</title>
+	<link rel="stylesheet" type="text/css" href="css/style-index.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style-goods1.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style-login.css">
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<!-- <script type="text/javascript" src="js/tools.js"></script> -->
+	<script type="text/javascript" src="js/zhuce.js"></script>
+	<script type="text/javascript" src="js/zhuce2.js"></script>
+	<script type="text/javascript" src="js/dl2.js"></script>
+	<script type="text/javascript" src="js/dlcookie.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("li", "#nav").on("mouseover",function(){
+			var navindex = $(this).index()+1;
+				// console.log(navindex);
+				$(this).find(".ups").css({"display":"none"}).end();
+				$(this).find(".downs").css({"display":"block"}).end();
+		});
+		$("li", "#nav").on("mouseout",function(){
+			var navindex = $(this).index()+1;
+				// console.log(navindex);
+				$(this).find(".ups").css({"display":"block"}).end();
+				$(this).find(".downs").css({"display":"none"}).end();
+		});
+
+
+
+	});
+
+	</script>
+	
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="top">
+	<div class="top-con">
+		<div class="top-left">
+			<a href="DHC CHINAindex.html"><img class="topslogo" src="imgs/topslogo.png"></a>
+			<a href="#"><img src="imgs/tops02.png"></a>
+			<ul>
+				<li><a href="#"><img src="imgs/tops03.png"></a></li><br>
+				<li><a href="#"><img src="imgs/tops06.png"></a></li>
+				<li><a href="#"><img src="imgs/tops07.png"></a></li>
+			</ul>
+			<ul>
+				<li><a href="#"><img src="imgs/tops00.jpg"></a></li>
+				<li><a href="#"><img src="imgs/tops98.png"></a></li>
+				<li><a href="#"><img src="imgs/tops99.png"></a></li>
+			</ul>
+			
+			<a href="#"><img src="imgs/tops08.png" style="margin-right:15px;"></a>
+			<a href="#"><img src="imgs/tops09.png" style="margin-right:15px;"></a>
+			<a href="#"><img src="imgs/tops10.png" style="margin-right:15px;"></a>
+		</div>
+
+		<div class="top-right">
+			<div class="box1">
+				<div class="shops">
+				<p class="p1">商品合计：<span>0</span>件</p>
+				<p class="p2">合计：<span>0</span><strong style="color:red">元</strong></p>
+				</div>
+				<div id="btn11" style="background:blue;"><a href="shopcar.html"><img src="imgs/tops01_03.jpg" class="image1" ></a></div>
+				<div id="btn12" style="background:red;">
+				<a href="DHC login 注册.html"><img src="imgs/tops01_05.jpg" class="image2"></a></div>
+
+			<p class="login">欢迎来到DHC[<a href="#">点击登录</a>>]</p>
+			</div>
+		</div>
+	
+	</div>
+
+
+	<!-- 一级导航 -->
+	<div id="nav">
+
+		<ul>
+			<li><a href="DHC CHINAindex.html"><img src="imgs/top_2_1down.jpg" class="downs"><img src="imgs/top_2_1up.jpg" class="ups"></a></li>
+			<li><a href="DHC弹力蛋白.html"><img src="imgs/top_2_2up.jpg" class="ups"><img src="imgs/top_2_2down.jpg" class="downs"></a></li>
+			<li><a href="#"><img src="imgs/top_2_3up.jpg" class="ups"><img src="imgs/top_2_3down.jpg" class="downs"></a></li>
+			<li><a href="month-off.html"><img src="imgs/top_2_4up.jpg" class="ups"><img src="imgs/top_2_4down.jpg" class="downs"></a></li>
+			<li><a href="#"><img src="imgs/top_2_5up.jpg" class="ups"><img src="imgs/top_2_5down.jpg" class="downs"></a></li>
+			<li><a href="#"><img src="imgs/top_2_6up.jpg" class="ups"><img src="imgs/top_2_6down.jpg" class="downs"></a></li>
+
+		</ul>
+
+	</div>
+
+	</div>
+
+
+	<!-- search -->
+	
+		<div class="search">
+			<div class="search-con">
+			<div class="box2">
+				<input class="search-inp" type="text" class="top-search" placeholder="请输入商品名称、商品编号或关键字" />
+				<button class="search-btn"><span><img src="imgs/top_search.jpg"></span><strong>搜索</strong></button>
+			</div>	
+			</div>
+		</div>
+
+	<!-- main -->
+	<div id="main">
+		<div class="main-con">
+			<h4 class="login-h4-1">登录</h4>
+				<div class="zcdl">
+					<div class="dl">
+					<h2>DHC会员登录</h2>				
+						<form method="post" class="form1">
+							<div class="dl-login" style="width:395px; height:115px; padding:15px;">
+								<table class="dl-tab1" style="width:393px; border-collapse: collapse; height:113px; border:2px solid #ccc; ">
+									<tr style="border:1px solid #ccc; height:57px;">
+										<td style="width:125px; background:#f0f0f0; color:black; text-align:center; line-height:57px; font-size:14px; letter-spacing:4px;">用户名</td>
+										<td style="padding-left:25px;"><input type="text" id="username2" class ="dlusername username" placeholder="Email/会员号/手机号"></td>
+									</tr>
+									<tr>
+										<td style="width:125px; background:#f0f0f0; color:black; text-align:center; line-height:57px; font-size:14px; letter-spacing:4px;">密   码</td>
+										<td style="padding-left:25px;"><input type="password" id="pwd2" class="password dlpassword" placeholder="密码"></td>
+									</tr>
+								</table>
+								</div>
+								<div class="rem" style="width:425px; height:50px; border-radius:5px; background:#d7f1ee; font-weight:900;margin-bottom:17px;">
+									<input type="checkbox"  checked="" class="rember" style="line-height:50px; margin-left:85px;">记住我
+									<a href="#" style="margin-left:127px; line-height:50px; color:black; text-decoration:underline;">忘记密码</a>
+								</div>
+
+							<div class="login-in" style="width:333px; height:45px; padding:0px 45px 13px 45px;">
+							<a href="DHC CHINAindex.html"><input type="button" id="login2" style=" background: #54aea5; color: white; font-weight: 900; font-size: 18px; letter-spacing: 7px; width:333px; height:45px; border: 2px solid #ccc; border-radius:6px; box-shadow:2px 2px 2px #ccc;" value="立即登录"></a>
+							</div>
+							<div class="onther-login" style="width:330px; height:25px; padding-left:100px;">
+
+							<a href="#" style="color:black; font-size:14px; margin-right:35px;">使用合作网站</a>
+							<img src="login-imgs/zhifubao.jpg" style="display:inline-block;"><a href="#" style="color:black; text-decoration:underline; font-size:14px;">支付宝快捷登录</a>  
+							<span style=" width:10px; height: 10px; font-size: 8px; background:black; color:white;">></span>
+							</div>
+						</form>
+
+					<div style="height:50px; width:430px; position:relative;">
+					<img src="login-imgs/shuxian.jpg" style="display:inline-block; position:absolute; left:0; top:15px;" />
+					<p style="font-size:14px; font-weight:900; color:black; display: inline-block; text-indent:18px; line-height:50px;">通过电话或手机号注册的用户，请完善信息</p>
+					</div>
+					<form class="form2" method="post">
+						<table class="dl-tab2" style="width:393px; border-collapse: collapse; height:113px; border:2px solid #ccc; margin-bottom: 15px; ">
+							<tr style="border:1px solid #ccc; height:57px;">
+								<td style="width:125px; background:#f0f0f0; color:black; text-align:center; line-height:57px; font-size:14px; letter-spacing:4px;">会员号</td>
+								<td style="padding-left:25px;"><input type="text" class="vip-name"></td>
+							</tr>
+							<tr>
+								<td style="width:125px; background:#f0f0f0; color:black; text-align:center; line-height:57px; font-size:14px;">电话或手机号
+								</td>
+								<td style="padding-left:25px; position:relative;">
+								<input type="text" class="vip-phone">
+								<p style="display:block; position:absolute; left:30px; top:42px;">(固定电话号码前加区号)</p>
+								</td>
+							</tr>
+								
+						</table>
+						<input type="submit" style=" background: #54aea5; color: white; font-weight: 900; font-size: 18px; letter-spacing: 7px; width:333px; height:45px; border: 2px solid #ccc; border-radius:6px; box-shadow:2px 2px 2px #ccc; margin-left:45px;"  value="完善信息">
+
+					</form>
+
+	<!-- 注册 -->
+
+					</div>
+					<div class="zc" style="position:relative;">
+						<h2>DHC新会员注册</h2>
+						<form method="post" class="form2">
+							<div class="zc-form1" style="width:395px; height:342px; padding:15px;">
+								<table class="zc-tab1" style="width:393px; border-collapse: collapse; height:340px; border:2px solid #ccc; ">
+									<tr style="border:1px solid #ccc; height:55px;">
+										<td style="width:134px; background:#f0f0f0; color:black; text-align:center; line-height:55px; font-size:14px; letter-spacing:4px;">手机号</td>
+								<td style="padding-left:25px;"><input type="text" style="width:200px;" class="zc-phone nicknames"><span id="nickname_err"></span>
+
+										</td>
+									</tr>
+									<tr style="border:1px solid #ccc; height:55px;">
+										<td style="width:134px; background:#f0f0f0; color:black; text-align:center; line-height:55px; font-size:14px; letter-spacing:4px;">验证码</td>
+										<td style="padding-left:25px;"><input style="width:100px; margin-right:12px;" type="text" class="zc-yzm"><div style="width:72px; height:22px;background: #ccc; color:blue; display:inline-block; text-align:center;"><span  class="yzm"></span></div><span id="yzm_err"></span>
+										
+										</td>
+									</tr>
+									<tr style="border:1px solid #ccc; height:55px;">
+										<td style="width:134px; background:#f0f0f0; color:black; text-align:center;  font-size:14px; letter-spacing:4px;">短信验证码
+										</td>
+										<td style="padding-left:25px;line-height:55px; position:relative;">
+										<input style="width:100px;margin-right:12px;" type="text" class="dx-yzm">
+										<button style="width:100px; display: inline-block; height:22px; font-size: 10px; background:#ddd; color:black;">获取短信验证码
+										</button>
+										<p style="color: #c7c7c7;position: absolute; left: 32px; top:22px; ">点击<span style="background:#ccc; color:white;">获取短信验证码</span>,并输入</p>
+										
+										</td>
+									</tr>
+									<tr style="border:1px solid #ccc; height:55px;">
+										<td style="width:134px; background:#f0f0f0; color:black; text-align:center; line-height:55px; font-size:14px; letter-spacing:4px;">邮箱地址</td>
+										<td style="padding-left:25px; position:relative;">
+										<input style="width:200px;" class="email-addr" id="username" type="email" required="" title="邮箱地址不正确！">
+										<span id="username_err"></span>
+										<p style="position:absolute; left:32px; top:42px;">(填写有效邮箱作为下次登录名)</p>
+										
+										</td>
+									</tr>
+									<tr style="border:1px solid #ccc; height:55px;">
+										<td style="width:134px; background:#f0f0f0; color:black; text-align:center; line-height:55px; font-size:14px; letter-spacing:4px;">密码</td>
+										<td style="padding-left:25px;"><input class="zc-password" id="pwd" type="password"  style="width:200px;"><span id="password_err"></span>
+
+										</td>
+									</tr>
+									<tr>
+										<td style="width:134px; background:#f0f0f0; color:black; text-align:center; line-height:55px; font-size:14px; letter-spacing:4px;">确认密码</td>
+										<td style="padding-left:25px;">
+											<input  style="width:200px;" class="zc-password" type="password" placeholder="">
+
+										</td>
+									</tr>
+								</table>
+								
+								<div class="zc-dy" style="width:400px; height:50px; border-radius:5px; background:#d7f1ee; font-weight:900;margin-bottom:17px; margin-top:15px;">
+									<input type="checkbox" style=" margin-top:20px;">        我同意订阅DHC电子报，免费接收DHC美容咨询和活动信息
+								</div>
+								<button id="insert" style=" background: #54aea5; color: white; font-weight: 900; font-size: 18px; letter-spacing: 7px; width:333px; height:45px; border: 2px solid #ccc; border-radius:6px; box-shadow:2px 2px 2px #ccc; margin-left:45px;">立即注册</button>
+							</div>
+						</form>
+						<div style="position:absolute; left:20px; bottom:10px;">
+						<div style="height:50px; width:430px; position:relative;">
+						<img src="login-imgs/shuxian.jpg" style="display:inline-block;position:absolute; left:0; top:15px;"><a href="#">
+							<p style="font-size:14px; font-weight:900; color:black; display: inline-block; text-indent:18px; line-height:50px;">立即成为DHC会员，享受多重专属礼遇<span style="font-size:10px; height:12px ; width:12px; background:black; color:white;">></span></p></a>
+						</div></div>
+
+					</div>
+				</div>
+			<h4 class="login-h4-2">选择DHC官网购物的理由</h4>
+				<ul class="reson1">
+					<li><img src="login-imgs/reason-1.jpg"></li>
+					<li><img src="login-imgs/reason-2.jpg"></li>
+					<li><img src="login-imgs/reason-3.jpg"></li>
+					<li><img src="login-imgs/reason-4.jpg"></li>
+					<li><img src="login-imgs/reason-5.jpg"></li>
+				</ul>
+			<h4 class="login-h4-3">注册即可免费试用，人气护肤体验装2选1</h4>
+				<div class=tiyan>
+					<a href="#" class="tiyan2-1"><img src="login-imgs/tiyan2-1.jpg"></a>
+					<a href="#" class="tiyan2-2"><img src="login-imgs/tiyan2-2.jpg"></a>
+				</div>
+
+		</div>
+	</div>
+
+	<!--login-map -->
+	<div id="login-map">
+		<div class="login-map-con">
+			<ul>
+				<li><a href="#">关于DHC</a></li>
+				<li><a href="#">购物指南</a></li>
+				<li><a href="#">会员优惠</a></li>
+				<li><a href="#">广告合作</a></li>
+				<li><a href="#">招聘信息</a></li>
+				<li><a href="#">校园代理</a></li>
+				<li><a href="#">网站地图</a></li>
+
+			</ul>
+
+		</div>
+	</div>
+	<!-- totop -->
+	<a class="toTop" href="#">
+	<img src="imgs/toTop.png" style="position:fixed; right:10px; bottom:20px;"/>
+	</a>
+
+	<!-- foot -->
+	<div id="foot">
+		<div class="foot-con" >
+			<a class="footlogo" href="DHC CHINAindex.html"><img src="imgs/logoFoot.jpg"></a>
+
+			<div class="foottext" >
+				<p><strong>上海蝶翠诗商业有限公司</strong> 版权所有 &copy; 2003-2012</p>
+				<p>上海邮政信箱 126-019 (浦东局) 邮编：200126</p>
+				<p>DHC 日本通信销售化妆品品牌NO.1</p>
+				<p>(品牌排名根据日本流通产业新闻 2016年1月)</p>
+		
+			</div>
+
+			<div class="foottext2">
+				<p>企业营业执照</p>
+				<p>沪ICP 备05035135</p>
+			</div>
+
+			<a class="footpic1" href="#"><img src="imgs/ICBC.gif"></a>
+
+			<a class="footpic2" href="#"><img src="imgs/web110.gif"></a>
+
+			<a class="footpic3" href="#"><img src="imgs/zxw.gif"></a>
+
+			<a class="footpic4" href="#"><img src="imgs/wangjing.jpg"></a>
+ 
+		</div>
+	</div>
+</body>
+</html>
